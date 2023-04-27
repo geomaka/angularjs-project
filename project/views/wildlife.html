@@ -1,0 +1,9 @@
+<div>
+    <ul>
+        <li ng-repeat="animal in wildlife | orderBy :'name' | filter : searchtxt ">
+            <img src="{{animal.thumb}}" class="img-fluid" alt="...">
+            <h3>{{animal.name}}</h3>
+            <p>{{animal.snippet}}</p>
+        </li>
+    </ul>
+</div>

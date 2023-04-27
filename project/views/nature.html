@@ -1,0 +1,9 @@
+<div>
+    <ul>
+        <li ng-repeat="nature in nature | orderBy :'name' | filter : searchtxt ">
+            <img src="{{nature.thumb}}" class="img-fluid" alt="...">
+            <h3>{{nature.name}}</h3>
+            <p>{{nature.snippet}}</p>
+        </li>
+    </ul>
+</div>

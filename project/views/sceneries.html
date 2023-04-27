@@ -1,0 +1,9 @@
+<div>
+    <ul>
+        <li ng-repeat="scenery in sceneries | orderBy :'name' | filter : searchtxt ">
+            <img src="{{scenery.thumb}}" class="img-fluid" alt="...">
+            <h3>{{scenery.name}}</h3>
+            <p>{{scenery.snippet}}</p>
+        </li>
+    </ul>
+</div>
